@@ -15,7 +15,7 @@ def busca_binaria(lista):
             dir = meio - 1
 
 
-lista = [1, 2]
+lista = [1, 2, 4, 7, 11, 15, 18, 20, 21, 55, 19, 14, 10, 8, 3, 0]
 resultado = busca_binaria(lista)
 print(resultado)
         
