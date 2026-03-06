@@ -1,4 +1,5 @@
 import { fastify } from 'fastify'
+import {} from './database-in-memory.js'
 
 const server = fastify()
 
