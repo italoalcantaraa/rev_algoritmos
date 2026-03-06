@@ -17,6 +17,8 @@ server.get('/videos', () => {
 })
 
 server.put('/videos/:id', () => {
+  const { id } = useParams()
+  
   return "PUT"
 })
 
