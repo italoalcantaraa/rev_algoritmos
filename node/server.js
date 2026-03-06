@@ -20,7 +20,6 @@ server.put('/videos/:id', (video) => {
   const { id } = useParams()
 
   DBMemory.put(id, video)
-  return "PUT"
 })
 
 server.delete('/videos/:id', () => {
