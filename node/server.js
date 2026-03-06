@@ -3,6 +3,7 @@ import { DBMemory } from './database-in-memory.js'
 import { useParams } from "react-router-dom"
 
 const server = fastify()
+const DBMemory = new DBMemory()
 
 server.post('/videos', (video) => {
   DBMemory.create(video)
