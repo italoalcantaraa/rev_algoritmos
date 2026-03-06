@@ -1,4 +1,4 @@
-import { radomUUID } from "node:crypto"
+import { raNdomUUID } from "node:crypto"
 
 
 export class DBMemory {
