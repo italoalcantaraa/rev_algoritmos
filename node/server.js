@@ -12,7 +12,7 @@ server.post('/videos', (video) => {
 })
 
 server.get('/videos', () => {
-  return "GET"
+  return DBMemory.get()
 })
 
 server.put('/videos/:id', () => {
