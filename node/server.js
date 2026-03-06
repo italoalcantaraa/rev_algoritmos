@@ -8,9 +8,7 @@ server.post('/videos', (request, reply) => {
   const video = request.body
   dataBaseMemory.create(video)
 
-  return {
-    message: "Vídeo adicionado!"
-  }
+  reply.status(201)
 })
 
 server.get('/videos', () => {
