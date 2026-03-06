@@ -8,9 +8,6 @@ server.listen({
   port: 3000
 })
 
-server.get('/', () => {
-  return "Teste"
-})
 
 server.get('/hello', () => {
   return {
