@@ -1,6 +1,6 @@
 import { fastify } from 'fastify'
 import { DBMemory } from './database-in-memory.js'
-import {names} from "react-router-dom"
+import { params } from "react-router-dom"
 
 
 const server = fastify()
