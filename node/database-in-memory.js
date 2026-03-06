@@ -8,4 +8,13 @@ export class DBMemory {
     
     this.videos.set(id, video)
   }
+  
+  get() {
+    return this.videos
+  }
+  create(video) {
+    const id = randomUUID();
+    
+    this.videos.set(id, video)
+  }
 }
