@@ -16,7 +16,7 @@ server.get('/videos', () => {
   return DBMemory.get()
 })
 
-server.put('/videos/:id', () => {
+server.put('/videos/:id', (video) => {
   const { id } = useParams()
   
   return "PUT"
