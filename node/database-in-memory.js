@@ -1,4 +1,4 @@
-class DBMemory {
+export class DBMemory {
   #videos = []
 
   create(video) {
