@@ -1,1 +1,5 @@
 import { createServer } from 'node:http'
+
+const server = createServer((port) => {
+  console.log()
+})
