@@ -6,4 +6,4 @@ const server = createServer(() => {
   console.log(`API rodando na porta ${PORT}`)
 })
 
-server.listen(3000)
+server.listen(PORT)
