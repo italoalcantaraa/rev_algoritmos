@@ -4,6 +4,7 @@ const PORT = 3000
 
 const server = createServer((req, res) => {
   res.write("OPA!")
+  res.write("OPA!")
 })
 
 server.listen(PORT)
