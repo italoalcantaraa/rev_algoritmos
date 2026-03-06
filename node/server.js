@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom"
 
 const server = fastify()
 
-const useParams = useParams()
-
 server.post('/videos', (video) => {
   DBMemory.create(video)
   
