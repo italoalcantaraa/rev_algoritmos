@@ -12,9 +12,8 @@ export class DBMemory {
   get() {
     return this.videos
   }
-  create(video) {
-    const id = randomUUID();
-    
+  
+  ipdate(id, video) {
     this.videos.set(id, video)
   }
 }
