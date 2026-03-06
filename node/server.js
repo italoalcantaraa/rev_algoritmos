@@ -23,6 +23,8 @@ server.put('/videos/:id', () => {
 })
 
 server.delete('/videos/:id', () => {
+  const { id } = useParams()
+  
   return "DELETE"
 })
 
