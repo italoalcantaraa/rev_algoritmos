@@ -2,8 +2,8 @@ import { createServer } from 'node:http'
 
 const PORT = 3000
 
-const server = createServer(() => {
-  console.log(`API rodando na porta ${PORT}`)
+const server = createServer((req, res) => {
+  res.write("OPA!")
 })
 
 server.listen(PORT)
