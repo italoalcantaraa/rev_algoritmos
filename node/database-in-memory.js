@@ -10,7 +10,7 @@ export class DBMemory {
   }
   
   listAll() {
-    return this.#videos.entries()
+    return Array.fromArray(this.#videos.values())
   }
   
   update(id, video) {
