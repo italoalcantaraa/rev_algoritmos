@@ -11,7 +11,7 @@ server.get('/videos', () => {
 })
 
 server.put('/videos/:id', () => {
-  return "POST"
+  return "PUT"
 })
 server.post('/videos', () => {
   return "POST"
