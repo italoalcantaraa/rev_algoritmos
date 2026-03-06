@@ -1,10 +1,9 @@
-import { createServer } from 'node:http'
+import { fastify } from 'fastify'
 
 const PORT = 3000
 
-const server = createServer((req, res) => {
-  res.write("OPA!")
-  res.write("OPA!")
-})
+const server = fastify()
 
-server.listen(PORT)
+server.lister({
+  port: 3000
+})
