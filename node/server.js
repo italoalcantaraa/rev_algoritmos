@@ -14,14 +14,14 @@ server.post('/videos', (request, reply) => {
 })
 
 server.get('/videos', () => {
-  return dataBaseMemory.listAll()
+  return Array.from(dataBaseMemory.listAll())
 })
 
 server.put('/videos/:id', (request, reply) => {
   const { id } = request.params
   const video = request.body
 
-  dataBaseMemory.put(id, video)
+  dataBaseMemory.update(id, video)
 
   return {
     message: "Vídeo atualizado!"
