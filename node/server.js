@@ -1,34 +1,46 @@
 import { fastify } from 'fastify'
 import { DBMemory } from './database-in-memory.js'
-import { useParams } from "react-router-dom"
 
 const server = fastify()
 const dataBaseMemory = new DBMemory()
 
-server.post('/videos', (video) => {
+server.post('/videos', (request, reply) => {
+  const video = request.body
   dataBaseMemory.create(video)
-  
+
   return {
     message: "Vídeo adicionado!"
-  };
+  }
 })
 
 server.get('/videos', () => {
   return dataBaseMemory.listAll()
 })
 
-server.put('/videos/:id', (video) => {
-  const { id } = useParams()
+server.put('/videos/:id', (request, reply) => {
+  const { id } = request.params
+  const video = request.body
 
   dataBaseMemory.put(id, video)
+
+  return {
+    message: "Vídeo atualizado!"
+  }
 })
 
-server.delete('/videos/:id', () => {
-  const { id } = useParams()
+server.delete('/videos/:id', (request, reply) => {
+  const { id } = request.params
 
   dataBaseMemory.delete(id)
+
+  return {
+    message: "Vídeo deletado!"
+  }
 })
 
 server.listen({
   port: 3000
+}, (err, address) => {
+  if (err) throw err
+  console.log(`Servidor rodando em ${address}`)
 })
