@@ -5,7 +5,7 @@ const server = fastify()
 
 server.post('/videos', (video) => {
   const response = DBMemory.create(video)
-  return "POST"
+  return response;
 })
 
 server.get('/videos', () => {
