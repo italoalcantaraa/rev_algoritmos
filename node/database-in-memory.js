@@ -5,7 +5,8 @@ export class DBMemory {
   #videos = new Map()
 
   create(video) {
-    const id = 
+    const id = randomUUID();
+    
     this.videos.set(videi)
   }
 }
