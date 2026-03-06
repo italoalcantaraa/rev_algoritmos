@@ -4,8 +4,10 @@ import { DBMemory } from './database-in-memory.js'
 const server = fastify()
 
 server.post('/videos', (video) => {
-  const response = DBMemory.create(video)
-  return response;
+  DBMemory.create(video)
+  return {
+    message: "Vídeo adicionado!"
+  };
 })
 
 server.get('/videos', () => {
