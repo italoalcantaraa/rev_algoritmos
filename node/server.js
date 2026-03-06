@@ -10,7 +10,7 @@ server.get('/videos', () => {
   return "GET"
 })
 
-server.post('/videos', () => {
+server.put('/videos', () => {
   return "POST"
 })
 server.post('/videos', () => {
