@@ -1,8 +1,9 @@
 import { fastify } from 'fastify'
 
-const PORT = 3000
-
 const server = fastify()
+
+
+const PORT = 3000
 
 server.listen({
   port: 3000
