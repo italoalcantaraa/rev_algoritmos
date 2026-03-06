@@ -29,9 +29,7 @@ server.delete('/videos/:id', (request, reply) => {
 
   dataBaseMemory.delete(id)
 
-  return {
-    message: "Vídeo deletado!"
-  }
+  reply.status(201)
 })
 
 server.listen({
