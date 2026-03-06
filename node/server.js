@@ -11,3 +11,9 @@ server.listen({
 server.get('/', () => {
   return "Teste"
 })
+
+server.get('/hello', () => {
+  return {
+    message: "Hello"
+  }
+})
