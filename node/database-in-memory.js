@@ -9,8 +9,8 @@ export class DBMemory {
     this.videos.set(id, video)
   }
   
-  get() {
-    return this.videos
+  listAll() {
+    return this.videos.values()
   }
   
   update(id, video) {
