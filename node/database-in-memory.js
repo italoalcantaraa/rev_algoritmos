@@ -13,7 +13,12 @@ export class DBMemory {
     return this.videos
   }
   
-  ipdate(id, video) {
+  update(id, video) {
     this.videos.set(id, video)
   }
+
+  delete(id) {
+    this.videos.delete(id)
+  }
+  
 }
