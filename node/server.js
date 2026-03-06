@@ -21,9 +21,7 @@ server.put('/videos/:id', (request, reply) => {
 
   dataBaseMemory.update(id, video)
 
-  return {
-    message: "Vídeo atualizado!"
-  }
+  reply.status(201)
 })
 
 server.delete('/videos/:id', (request, reply) => {
