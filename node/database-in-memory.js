@@ -6,7 +6,7 @@ export class DBMemory {
   create(video) {
     const id = randomUUID();
     
-    this.videos.set(id, video)
+    this.#videos.set(id, video)
   }
   
   listAll() {
