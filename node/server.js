@@ -13,7 +13,7 @@ server.post('/videos', (video) => {
 })
 
 server.get('/videos', () => {
-  return DBMemory.get()
+  return DBMemory.listAll()
 })
 
 server.put('/videos/:id', (video) => {
