@@ -4,6 +4,6 @@ const PORT = 3000
 
 const server = fastify()
 
-server.lister({
+server.listen({
   port: 3000
 })
