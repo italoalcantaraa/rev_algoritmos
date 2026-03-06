@@ -5,6 +5,7 @@ const server = fastify()
 
 server.post('/videos', (video) => {
   DBMemory.create(video)
+  
   return {
     message: "Vídeo adicionado!"
   };
