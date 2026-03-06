@@ -14,7 +14,7 @@ server.put('/videos/:id', () => {
   return "PUT"
 })
 
-server.post('/videos', () => {
+server.delete('/videos', () => {
   return "POST"
 })
 
