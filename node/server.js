@@ -26,7 +26,6 @@ server.delete('/videos/:id', () => {
   const { id } = useParams()
 
   DBMemory.delete(id)
-  return "DELETE"
 })
 
 server.listen({
